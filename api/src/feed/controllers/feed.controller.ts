@@ -38,7 +38,7 @@ export class FeedController {
   //   return this.feedService.findAllPosts();
   // }
 
-  @UseGuards(JwtGuard)
+  // @UseGuards(JwtGuard)
   @Get()
   findSelected(
     @Query('take') take: number = 1,
